@@ -17,6 +17,7 @@ import java.util.ArrayList;
 public class FormularioActivity extends AppCompatActivity {
     Spinner spinner_entrenamiento;
     Button button_salir;
+    Button button_historial;
     ArrayList<String> ejercicios = new ArrayList<String>()  ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,11 @@ public class FormularioActivity extends AppCompatActivity {
         button_salir = findViewById(R.id.button_salir);
         button_salir.setOnClickListener( v ->
                 startActivity( new Intent(FormularioActivity.this, MainActivity.class) )
+        );
+
+        button_historial = findViewById(R.id.button_his);
+        button_historial.setOnClickListener( v ->
+                startActivity( new Intent(FormularioActivity.this, HistorialActivity.class) )
         );
 
 
