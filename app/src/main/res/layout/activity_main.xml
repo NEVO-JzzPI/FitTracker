@@ -7,13 +7,40 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="133dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="224dp"
+            app:srcCompat="@drawable/pruebandroida" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik"
+            android:text="Bienvenido a FitTracker"
+            android:textAlignment="center"
+            android:textColor="#4CAF50"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/button_main"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:fontFamily="@font/rubik"
+            android:text="Comenzar" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
